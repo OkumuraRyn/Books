@@ -3,14 +3,6 @@ import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-plugin-svg-loader'
 
 export default defineConfig({
-  plugins: [vue(), svgLoader()],
-  server: {
-    proxy: {
-      '/api/deepseek': {
-        target: 'https://api.deepseek.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/deepseek/, '')
-      }
-    }
-  }
+  base: 'Books',  // 替换为你的仓库名
+  plugins: [vue(), svgLoader()]
 })
