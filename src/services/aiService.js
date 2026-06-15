@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-// ⚠️ 请在这里填入你的 DeepSeek API Key
-const DEEPSEEK_API_KEY = 'YOUR_API_KEY_HERE'
+
+
 const API_URL = '/api/deepseek/v1/chat/completions'
 
 export async function callDeepSeek(text, type) {
