@@ -1,0 +1,22 @@
+{
+  "name": "Books",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "pdfjs-dist": "^4.0.379",
+    "epubjs": "^0.3.93",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0",
+    "vite-plugin-svg-loader": "^2.0.0"
+  }
+}
