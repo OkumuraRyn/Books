@@ -10,7 +10,8 @@
 import { ref, onMounted, watch, nextTick } from 'vue'
 import * as pdfjsLib from 'pdfjs-dist'
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/build/pdf.worker.min.js`
+// 使用 unpkg，稳定性更好
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@4.0.379/build/pdf.worker.min.js`
   
 const props = defineProps(['data'])
 const emit = defineEmits(['text-selected'])
