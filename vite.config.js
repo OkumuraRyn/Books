@@ -4,5 +4,16 @@ import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
   base: '/Books/',
-  plugins: [vue(), svgLoader()]
+  plugins: [vue(), svgLoader()],
+  esbuild: {
+    target: 'es2022'
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'es2022'
+    }
+  },
+  build: {
+    target: 'es2022'
+  }
 })
