@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.0",
-    "pdfjs-dist": "4.0.379",
+    "pdfjs-dist": "^4.0.379",
     "epubjs": "^0.3.93",
     "axios": "^1.6.0"
   },
